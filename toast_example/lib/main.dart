@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.red,
+          primarySwatch: Colors.blue,
         ),
         title: 'Toast App',
         home: const MyPage());
@@ -31,7 +31,9 @@ class MyPage extends StatelessWidget {
       ),
       body: Center(
         child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            flutterToast();
+          },
           style: TextButton.styleFrom(
             foregroundColor: Colors.blue,
           ),
